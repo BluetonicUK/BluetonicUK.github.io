@@ -1,7 +1,8 @@
 /* eslint-disable no-multi-str */
 import { nanoid } from 'nanoid';
-import BTree from '../components/p5/binary_tree';
-import SketchSnowflakes from '../components/p5/snowflakes';
+import PNoise from '../components/p5/perlin_noise';
+import SineWave from '../components/p5/sinewaves';
+import Particles from '../components/p5/particles';
 
 // HEAD DATA
 export const headData = {
@@ -42,37 +43,41 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    sketchName: SketchSnowflakes,
-    title: 'Binary Tree Visualisation',
+    sketchName: Particles,
+    title: 'Particles',
+    info: 'I was playing around with some particles and thought this looked pretty. \
+           I like how simple code can produce patterns such as these particles, and by using \
+           proximity, give them some kind of a relationship.',
+    info2: '',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    sketchName: SineWave,
+
+    title: 'Sine Wave Fun',
+    info: 'P5 offers great functionality to create great animations. Here we are simply . \
+           adjusting a sine and cosine value within the draw function and mapping RBG values  \
+           whilst adjusting the frame count. I will update this in future to be more quirky!',
+    info2: '',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    sketchName: PNoise,
+
+    title: 'Perlin Noise',
     info:
-      "P5 is a great way to bring algorithms to life with visualisations. I've enjoyed creating these short visuals \
-      in P5 to help keep my skills sharp. Whilst implementing a binary tree algorithm is relatively easy, drawing the tree \
-      can pose some issues. How do we know to apply the correct spacing etc.",
+      "Perlin noise was imagined and implemented by a computer scientest in the 1980's called Ken Perlin.  \
+      The idea is that random numbers are related to their previous number in a 1 or 2 dimensional space. \
+      This visualisation has used a Perlin noise function to produce this animation.",
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    sketchName: SketchSnowflakes,
-
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    sketchName: SketchSnowflakes,
-
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
 ];
 
