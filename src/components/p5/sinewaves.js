@@ -21,7 +21,7 @@ export default function SineWaveFun(p5) {
   if (window.innerWidth <= 500) {
     width = mobileWidth;
   } else {
-    width = desktopWidth;
+    width = desktopWidth; 
   }
 
   p5.setup = () => {
